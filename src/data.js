@@ -1,29 +1,29 @@
 module.exports = {
   title: 'John Smith',
-  header: "Hi, I'm John Smith",
-  description: "I'm a college junior currently taking up Computer Science in University X. I'm a freelance developer with 4 years of experience, having worked with clients such as X, Y, Z. I enjoy building everything from small business sites to rich interactive web apps.",
-  name: 'John Smith',
-  footerTitle: 'Software Engineer',
-  email: 'johnsmith@mail.com',
+  header: "Hi, I'm Stratos Makrigiannakis",
+  description: "I'm a software engineer by day, working on my own game development related projects as a hobby.",
+  name: 'Stratos Makrigiannakis',
+  footerTitle: 'Software Engineer / Game Developer',
+  email: 'stratos.makrigiannakis@gmail.com',
   cta: {
     label: 'Get my resume',
     url: 'resume.pdf',
   },
   socials: [
-    { icon: 'twitter', url: '//' },
-    { icon: 'github-circled', url: '//' },
+    //{ icon: 'twitter', url: '//' },
+    { icon: 'github-circled', url: 'https://github.com/Kisamegr' },
     { icon: 'mail-alt' }, // mail alt automatically links to mailto:email
-    { icon: 'dribbble', url: '//' },
-    { icon: 'skype', url: '//' },
-    { icon: 'linkedin-squared', url: '//' },
+   // { icon: 'dribbble', url: '//' },
+    { icon: 'skype', url: 'skype:kisame_gr?chat' },
+    { icon: 'linkedin-squared', url: 'https://www.linkedin.com/in/stratos-makrigiannakis' },
   ],
   projects: [
     {
-      name: 'Combustion',
-      description: 'Combustion is a sleek, modern web client for the transmission bittorrent client.',
-      tags: ['React', 'Javascript', 'Webpack', 'Mobx', 'CSSModules'],
-      alt: 'Combustion Screenshot', // alt description of image for accessibility. defaults to '{{name}} Screenshot'
-      img: 'combustion.png',
+      name: 'Swingoff',
+      description: 'A fast paced, infinite runner mobile game ',
+      tags: ['Unity', 'C#', 'Android', '2D'],
+      alt: 'Swingoff Screenshot', // alt description of image for accessibility. defaults to '{{name}} Screenshot'
+      img: 'swingoff.png',
       url: '//'
     },
     {
@@ -50,7 +50,7 @@ module.exports = {
       ]
     }
   ],
-  testimonials: [
+ /* testimonials: [
     {
       quote: 'Incredibly talented and hardworking. A super friendly guy who is a frequent communicator',
       name: 'Person Name',
@@ -60,5 +60,5 @@ module.exports = {
       quote: 'Wow, thank you for this, you probably have the most intuitive explanation for this problem!',
       name: 'Person Name'
     }
-  ]
+  ]*/
 }
