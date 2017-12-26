@@ -20,7 +20,7 @@ module.exports = {
   projects: [
     {
       name: 'Swingoff',
-      description: 'A fast paced, infinite runner mobile game ',
+      description: 'A fast paced, infinite runner mobile game where you have to stay on air using your mechanical hook. Avoid obstacles in the way and pick up power ups to help you survive!',
       tags: ['Unity', 'C#', 'Android', '2D'],
       alt: 'Swingoff Screenshot', // alt description of image for accessibility. defaults to '{{name}} Screenshot'
       img: 'swingoff.png',
