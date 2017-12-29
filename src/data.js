@@ -1,9 +1,9 @@
 module.exports = {
-  title: 'John Smith',
+  title: 'Hi, I\'m Stratos',
   header: "Hi, I'm Stratos Makrigiannakis",
   description: "I'm a software engineer by day, working on my own game development related projects as a hobby.",
   name: 'Stratos Makrigiannakis',
-  footerTitle: 'Software Engineer / Game Developer',
+  footerTitle: 'Software Developer',
   email: 'stratos.makrigiannakis@gmail.com',
   cta: {
     label: 'Get my resume',
@@ -24,29 +24,36 @@ module.exports = {
       tags: ['Unity', 'C#', 'Android', '2D'],
       alt: 'Swingoff Screenshot', // alt description of image for accessibility. defaults to '{{name}} Screenshot'
       img: 'swingoff.png',
-      url: '//'
+      url: 'https://play.google.com/store/apps/details?id=com.dynobyte.swingoff'
     },
     {
-      name: 'Merc-01',
-      description: 'Merc-01 is a fast paced twin-stick shooter built on top of pyglet.',
-      tags: ['Python', 'WebGL', 'Pyglet'],
-      img: 'merc-01.png',
-      url: '//'
+      name: 'Crafty Fox',
+      description: 'A highly intensive mobile game, where you control a little fox running away from a granny on a scooter. Eat chickens along the way and catch food thrown by the angry granny to gain more points.',
+      tags: ['Unity', 'C#', 'Android', "iOS", '2D'],
+      img: 'craftyfox.png',
+      url: 'https://play.google.com/store/apps/details?id=com.zennogames.craftyfox'
     }
   ],
   experiences: [
     {
-      title: 'Senior Software Engineer at Company A',
-      timeline: 'Jan 2016 - Present',
-      description: 'Implemented Gamification for system',
+      title: 'Software Engineer at Wings Systems',
+      timeline: 'Nov 2016 - Present',
+      description: '',
+      responsibilities: [
+        'Working on software and apps for Windows, MacOS, Android and iOS platforms',
+        'Implementing interactive UI components for desktop and mobile devices',
+        'Handling the localization process by building the tools needed by our external translators',
+        'Creating and exporting 3D models in Blender when needed'
+      ]
     },
     {
-      title: 'Fullstack Software Engineer at Company B',
-      timeline: 'Feb 2015 - Dec 2015',
+      title: 'Computer Science Student',
+      timeline: 'Sep 2011 - Oct 2015',
+      description: 'Graduated from Aristotle University',
       responsibilities: [
-        'Worked with a global team of developers and artists for the implementation of new features in Existing Codebase of a Free-to-play MMO',
-        'Increased rate of tickets/tasks done by the team up to 300% within first few weeks!',
-        'Added Abstractions on Server API to Minimize Duplicate Code'
+        'Various programming work on projects directed by my supervisor professor, including 2D Physics simulation educational games and "ZWave Sensors" area monitoring software.',
+        'Made games as academic projects, such as Monopoly in C, Poker in Java, and a 3D Snake game with AI in Unity as my graduation thesis.',
+        'Playing with lots prototypes and demos in Unity on my free time, releasing 2 games on the mobile platform.'
       ]
     }
   ],
