@@ -1,12 +1,11 @@
-<div class="container project-container">
-  <h1>My Projects</h1>
-  {% for project in projects %}
+<div class="parent-container">
+  <div class="container project-container">
+    <h1>My Projects</h1>
+    {% for project in projects %}
     <div class="project">
       <div class="project__img-container">
-        {% assign alt = project.alt %}
-        {% unless project.alt %}
-          {% capture alt %}{{ project.name }} Screenshot{% endcapture %}
-        {% endif %}
+        {% assign alt = project.alt %} {% unless project.alt %} {% capture alt %}{{ project.name }} Screenshot{% endcapture %} {%
+        endif %}
         <img class="project__img" src="img/{{ project.img }}" alt="{{alt}}">
       </div>
       <div class="project__details">
@@ -15,7 +14,7 @@
         </h2>
         <div class="skill-tags">
           {% for tag in project.tags %}
-            <div class="skill-tag">{{ tag }}</div>
+          <div class="skill-tag">{{ tag }}</div>
           {% endfor %}
         </div>
         <p>
@@ -26,5 +25,6 @@
         </p>
       </div>
     </div>
-  {% endfor %}
+    {% endfor %}
+  </div>
 </div>

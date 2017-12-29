@@ -2,13 +2,15 @@ $mobile: "(min-width: 460px)";
 $tablet: "(min-width: 768px)";
 $desktop: "(min-width: 1024px)";
 
-$main-color: #f04;
+$main-color: darkslategrey;
 $main-text-color: #fff;
 
 $info-color: $main-color;
 $info-text-color: white;
 
-$tag-color: #eceff5;
+$tag-color: teal;
+
+$back_color: $main-color;
 
 $muted-color: #eaeaea;
 $footer-color: black;
