@@ -12,13 +12,14 @@
   }
 
   &__img-container {
-    margin: 0 auto;
+    margin: 10px auto;
     text-align: center;
     height: 100px;
     width: 100px;
     line-height: 100px;
     border-style: solid;
-    border-width: 10px;
+    border-width: 1px;
+    border-radius: 4px;
     @media #{$tablet} {
       float: left;
       line-height: 300px;
@@ -53,12 +54,14 @@
     @media #{$tablet} {
       float: right;
     }
+
   }
   .project__details {
     @media #{$tablet} {
       margin-left: 0;
       margin-right: 300px;
     }
+
 
 
   }

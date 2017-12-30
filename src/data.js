@@ -24,14 +24,15 @@ module.exports = {
       tags: ['Unity', 'C#', 'Android', '2D'],
       alt: 'Swingoff Screenshot', // alt description of image for accessibility. defaults to '{{name}} Screenshot'
       img: 'swingoff.png',
-      url: 'https://play.google.com/store/apps/details?id=com.dynobyte.swingoff'
+      url: 'https://play.google.com/store/apps/details?id=com.dynobyte.swingoff',
+      buttons: []
     },
     {
       name: 'Crafty Fox',
       description: 'A highly intensive mobile game, where you control a little fox running away from a granny on a scooter. Eat chickens along the way and catch food thrown by the angry granny to gain more points.',
       tags: ['Unity', 'C#', 'Android', "iOS", '2D'],
       img: 'craftyfox.png',
-      url: 'https://play.google.com/store/apps/details?id=com.zennogames.craftyfox'
+      url: 'https://play.google.com/store/apps/details?id=com.zennogames.craftyfox',
     }
   ],
   experiences: [
