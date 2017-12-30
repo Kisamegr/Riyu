@@ -13,7 +13,7 @@
           {% for social in socials %} {% assign url = social.url %} {% if social.icon == 'mail-alt' %} {% capture url %}mailto:{{ email
           }}{% endcapture %} {% endif %}
           <a class="socials__link" href="{{ url }}" target="_blank">
-            <i class="icon-{{social.icon}}"></i>
+            <i class="icon-{{social.icon}} social-icon"></i>
           </a>
           {% endfor %}
         </div>
