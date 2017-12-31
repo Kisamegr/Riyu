@@ -23,16 +23,29 @@ module.exports = {
       description: 'A fast paced, infinite runner mobile game where you have to stay on air using your mechanical hook. Avoid obstacles in the way and pick up power ups to help you survive!',
       tags: ['Unity', 'C#', 'Android', '2D'],
       alt: 'Swingoff Screenshot', // alt description of image for accessibility. defaults to '{{name}} Screenshot'
-      img: 'swingoff.png',
-      url: 'https://play.google.com/store/apps/details?id=com.dynobyte.swingoff',
-      buttons: []
+      img: 'https://giphy.com/embed/xULW8lPAzZ1enk4kec',
+      buttons: [
+        {
+          name: 'Google Play',
+          url: 'https://play.google.com/store/apps/details?id=com.dynobyte.swingoff'
+        }
+      ]    
     },
     {
       name: 'Crafty Fox',
       description: 'A highly intensive mobile game, where you control a little fox running away from a granny on a scooter. Eat chickens along the way and catch food thrown by the angry granny to gain more points.',
-      tags: ['Unity', 'C#', 'Android', "iOS", '2D'],
-      img: 'craftyfox.png',
-      url: 'https://play.google.com/store/apps/details?id=com.zennogames.craftyfox',
+      tags: ['Unity', 'C#', 'Android', "iOS", "Windows", '2D'],
+      img: 'https://giphy.com/embed/xULW8tCe3AqoE3OKru',
+      buttons: [
+        {
+          name: 'Google Play',
+          url: 'https://play.google.com/store/apps/details?id=com.zennogames.craftyfox'
+        },
+        {
+          name: 'Windows Store',
+          url: 'https://www.microsoft.com/el-gr/store/p/crafty-fox/9wzdncrdnmwh'
+        }
+      ] 
     }
   ],
   experiences: [

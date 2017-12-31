@@ -57,6 +57,12 @@ body {
   &--lg {
     padding: 18px 26px;
   }
+
+
+}
+
+.btn:hover {
+  background-color: darkred;
 }
 
 .skill-tags {
@@ -64,7 +70,6 @@ body {
   @media #{$tablet} {
     margin-left: 5px;
   }
-
 }
 
 .skill-tag {
