@@ -1,15 +1,16 @@
 .footer {
-  background-color: $footer-color;
+  background-color: transparent;
   color: $footer-text-color;
   text-align: center;
-  padding: 20px 0;
+  padding: 15px 0;
+  line-height: 10px;
 
-  &__name {
-    margin-top: 0;
-    margin-bottom: 0;
+  .foot-link {
+    color: $footer-text-color;
   }
-  &__title {
-    margin-top: 0;
-    color: $footer-alt-color;
-  }
+  // .foot-link:hover {
+  //     color:lightgray;
+    
+  // }
+  
 }

@@ -1,16 +1,15 @@
 <div class="parent-container">
   <div class="container">
+    <h1>Contact</h1>
     <div class='contact'>
-      <h2>Contact</h2>
-      <p class='contact__msg'>My email is <a href='mailto:{{email}}'>{{ email }}</a>.
-      <p class='contact__msg'> But you can also find me on
+      <p class='contact__msg'>For anything work related you can email me at <a class='link' href='mailto:{{email}}'>{{ email }}</a>.
+      <p class='contact__msg'> You can also find me directly on:
       <div>
         {% for soc in bsocials %}
-          <a href="{{ soc.url }}" target="_blank">
-            <img class="contact-icon" src="{{ soc.icon }}"></i>
-          </a>
+          <a href="{{ soc.url }}" target="_blank"><img class="contact-icon" src="{{ soc.icon }}"></i></a>
         {% endfor %}
         </div>
     </div>
+    
   </div>
 </div>

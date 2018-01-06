@@ -19,11 +19,11 @@ module.exports = {
   ],
   bsocials: [
     {icon: 'img/linkedin.svg', url: 'https://www.linkedin.com/in/stratos-makrigiannakis'},
+    {icon: 'img/skype.svg', url: 'skype:kisame_gr?chat'},
+    {icon: 'img/reddit.svg', url: 'https://www.reddit.com/user/kisamegr/'},
     {icon: 'img/facebook.svg', url: 'https://www.facebook.com/kisame.stratos'},
     {icon: 'img/instagram.svg', url: 'https://www.instagram.com/stratos_makr/'},
-    {icon: 'img/reddit.svg', url: 'https://www.reddit.com/user/kisamegr/'},
-    {icon: 'img/youtube.svg', url: 'https://www.youtube.com/kisamegr'},
-    {icon: 'img/skype.svg', url: 'skype:kisame_gr?chat'}
+    {icon: 'img/youtube.svg', url: 'https://www.youtube.com/kisamegr'}
   ],
 
   projects: [
