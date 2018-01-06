@@ -17,6 +17,15 @@ module.exports = {
     { icon: 'skype', url: 'skype:kisame_gr?chat' },
     { icon: 'linkedin-squared', url: 'https://www.linkedin.com/in/stratos-makrigiannakis' },
   ],
+  bsocials: [
+    {icon: 'img/linkedin.svg', url: 'https://www.linkedin.com/in/stratos-makrigiannakis'},
+    {icon: 'img/facebook.svg', url: 'https://www.facebook.com/kisame.stratos'},
+    {icon: 'img/instagram.svg', url: 'https://www.instagram.com/stratos_makr/'},
+    {icon: 'img/reddit.svg', url: 'https://www.reddit.com/user/kisamegr/'},
+    {icon: 'img/youtube.svg', url: 'https://www.youtube.com/kisamegr'},
+
+
+  ],
   projects: [
     {
       name: 'Swingoff',
@@ -51,10 +60,12 @@ module.exports = {
   experiences: [
     {
       title: 'Software Engineer at Wings Systems',
+      // title: 'Software Engineer at <a href="http://www.wingssystems.com/">Wings Systems</a>',
       timeline: 'Nov 2016 - Present',
       description: '',
       responsibilities: [
         'Working on software and apps for Windows, MacOS, Android and iOS platforms',
+        'Developing back-end modules using C++ on the Qt framework.',
         'Implementing interactive UI components for desktop and mobile devices',
         'Handling the localization process by building the tools needed by our external translators',
         'Creating and exporting 3D models in Blender when needed'
