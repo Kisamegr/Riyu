@@ -3,8 +3,8 @@
         <h1>Social</h1>
 
         {% for soc in bsocials %}
-          <a class="aaa" href="{{ soc.url }}" target="_blank">
-            <i class="{{social.icon}}"></i>
+          <a href="{{ soc.url }}" target="_blank">
+            <img class="contact-icon" src="{{ soc.icon }}"></i>
           </a>
         {% endfor %}
 

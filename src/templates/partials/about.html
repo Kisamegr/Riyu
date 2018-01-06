@@ -2,9 +2,15 @@
   <div class="container">
     <div class='contact'>
       <h2>Contact</h2>
-      <p class='contact__msg'>I'm currently available for freelance projects or full-time work. If you're interested in working with me, please get
-        in touch through
-        <a href='mailto:{{email}}'>{{ email }}</a>.
+      <p class='contact__msg'>My email is <a href='mailto:{{email}}'>{{ email }}</a>.
+      <p class='contact__msg'> But you can also find me on
+      <div>
+        {% for soc in bsocials %}
+          <a href="{{ soc.url }}" target="_blank">
+            <img class="contact-icon" src="{{ soc.icon }}"></i>
+          </a>
+        {% endfor %}
+        </div>
     </div>
   </div>
 </div>

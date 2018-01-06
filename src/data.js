@@ -23,9 +23,9 @@ module.exports = {
     {icon: 'img/instagram.svg', url: 'https://www.instagram.com/stratos_makr/'},
     {icon: 'img/reddit.svg', url: 'https://www.reddit.com/user/kisamegr/'},
     {icon: 'img/youtube.svg', url: 'https://www.youtube.com/kisamegr'},
-
-
+    {icon: 'img/skype.svg', url: 'skype:kisame_gr?chat'}
   ],
+
   projects: [
     {
       name: 'Swingoff',
