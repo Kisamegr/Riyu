@@ -25,9 +25,15 @@
   }
 }
 
+.social-icon {
+  width: 240px !important;
+  height: 240px !important;
+}
+
 .socials {
   margin-top: 10px;
 
+  min-width: 500px;
   &__link {
     color: inherit;
     text-decoration: none;

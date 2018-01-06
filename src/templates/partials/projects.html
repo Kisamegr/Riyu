@@ -1,12 +1,19 @@
 <div class="parent-container">
   <div class="container project-container">
-    <h1>My Projects</h1>
+    <h1>Projects</h1>
     {% for project in projects %}
     <div class="project">
       <div class="project__img-container">
-        {% assign alt = project.alt %} {% unless project.alt %} {% capture alt %}{{ project.name }} Screenshot{% endcapture %} {%
+        <!-- {% assign alt = project.alt %} {% unless project.alt %} {% capture alt %}{{ project.name }} Screenshot{% endcapture %} {%
         endif %}
-        <img class="project__img" src="img/{{ project.img }}" alt="{{alt}}">
+        <iframe src="https://giphy.com/embed/xT1R9HPaun5rfz7DoY"  frameBorder="0" class="giphy-embed">
+        </iframe>
+      -->
+        <div class="project__img">
+          <iframe src="{{ project.img }}" width="100%" height="100%" style="position:absolute;left:0" frameBorder="0"  ></iframe>
+        </div>
+
+        <!-- <img class="project__img" src="img/{{ project.img }}" alt="{{alt}}"> -->
       </div>
       <div class="project__details">
         <h2 class="project__name">
@@ -20,11 +27,21 @@
         <p>
           {{ project.description }}
           <div>
-            <a class="btn" href="{{project.url}}" target="_blank">View Project</a>
+            {% for button in project.buttons %}
+            <a class="btn" href="{{button.url}}" target="_blank">{{button.name}}</a>
+            {% endfor %}
+            <!-- {% for social in socials %} {% assign url = social.url %} {% if social.icon == 'mail-alt' %} {% capture url %}mailto:{{ email
+            }}{% endcapture %} {% endif %}
+            <a class="socials__link" href="{{ url }}" target="_blank">
+              <i class="icon-{{social.icon}} social-icon"></i>
+            </a>
+            {% endfor %} -->
           </div>
         </p>
       </div>
     </div>
     {% endfor %}
+
+
   </div>
 </div>

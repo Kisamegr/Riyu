@@ -1,0 +1,12 @@
+<div class="parent-container">
+    <div class="container social-container">
+        <h1>Social</h1>
+
+        {% for soc in bsocials %}
+          <a href="{{ soc.url }}" target="_blank">
+            <img class="contact-icon" src="{{ soc.icon }}"></i>
+          </a>
+        {% endfor %}
+
+    </div>
+</div>

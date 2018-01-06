@@ -1,0 +1,9 @@
+.contact-icon {
+    margin: 5px;
+    width: $contact-icon-size;
+    height: $contact-icon-size;
+    // border-width: 2px;
+    // border-style: solid;
+    border-radius: $contact-icon-size/2;
+    background-color: white;
+}

@@ -17,30 +17,55 @@ module.exports = {
     { icon: 'skype', url: 'skype:kisame_gr?chat' },
     { icon: 'linkedin-squared', url: 'https://www.linkedin.com/in/stratos-makrigiannakis' },
   ],
+  bsocials: [
+    {icon: 'img/linkedin.svg', url: 'https://www.linkedin.com/in/stratos-makrigiannakis'},
+    {icon: 'img/skype.svg', url: 'skype:kisame_gr?chat'},
+    {icon: 'img/reddit.svg', url: 'https://www.reddit.com/user/kisamegr/'},
+    {icon: 'img/facebook.svg', url: 'https://www.facebook.com/kisame.stratos'},
+    {icon: 'img/instagram.svg', url: 'https://www.instagram.com/stratos_makr/'},
+    {icon: 'img/youtube.svg', url: 'https://www.youtube.com/kisamegr'}
+  ],
+
   projects: [
     {
       name: 'Swingoff',
       description: 'A fast paced, infinite runner mobile game where you have to stay on air using your mechanical hook. Avoid obstacles in the way and pick up power ups to help you survive!',
       tags: ['Unity', 'C#', 'Android', '2D'],
       alt: 'Swingoff Screenshot', // alt description of image for accessibility. defaults to '{{name}} Screenshot'
-      img: 'swingoff.png',
-      url: 'https://play.google.com/store/apps/details?id=com.dynobyte.swingoff'
+      img: 'https://giphy.com/embed/xULW8lPAzZ1enk4kec',
+      buttons: [
+        {
+          name: 'Google Play',
+          url: 'https://play.google.com/store/apps/details?id=com.dynobyte.swingoff'
+        }
+      ]    
     },
     {
       name: 'Crafty Fox',
       description: 'A highly intensive mobile game, where you control a little fox running away from a granny on a scooter. Eat chickens along the way and catch food thrown by the angry granny to gain more points.',
-      tags: ['Unity', 'C#', 'Android', "iOS", '2D'],
-      img: 'craftyfox.png',
-      url: 'https://play.google.com/store/apps/details?id=com.zennogames.craftyfox'
+      tags: ['Unity', 'C#', 'Android', "iOS", "Windows", '2D'],
+      img: 'https://giphy.com/embed/xULW8tCe3AqoE3OKru',
+      buttons: [
+        {
+          name: 'Google Play',
+          url: 'https://play.google.com/store/apps/details?id=com.zennogames.craftyfox'
+        },
+        {
+          name: 'Windows Store',
+          url: 'https://www.microsoft.com/el-gr/store/p/crafty-fox/9wzdncrdnmwh'
+        }
+      ] 
     }
   ],
   experiences: [
     {
       title: 'Software Engineer at Wings Systems',
+      // title: 'Software Engineer at <a href="http://www.wingssystems.com/">Wings Systems</a>',
       timeline: 'Nov 2016 - Present',
       description: '',
       responsibilities: [
         'Working on software and apps for Windows, MacOS, Android and iOS platforms',
+        'Developing back-end modules using C++ on the Qt framework.',
         'Implementing interactive UI components for desktop and mobile devices',
         'Handling the localization process by building the tools needed by our external translators',
         'Creating and exporting 3D models in Blender when needed'

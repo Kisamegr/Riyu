@@ -1,3 +1,18 @@
+
+.contact {
+  border-width: 0;
+  border-top-width: 2px;
+  border-color: $tag-color;
+  border-style: solid;
+  margin-top: 0px;
+}
+
 .contact__msg {
-  line-height: 24px;
+  @media #{$mobile} {
+    line-height: 24px;
+  }
+
+  @media #{$tablet} {
+    line-height: 12px;
+  }
 }
