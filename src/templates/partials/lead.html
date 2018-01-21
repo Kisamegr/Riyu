@@ -3,7 +3,12 @@
     <div class="lead">
       <h1 class="lead__heading">{{ header }}</h1>
       <div class="lead__sub">
-        {{ description }}
+       {% for desc in description %}
+        
+        <p>
+        {{desc}}
+        </p>
+       {% endfor %}
       </div>
 
       <div class="call-to-action">

@@ -11,6 +11,7 @@
       -->
         <div class="project__img">
           <iframe src="{{ project.img }}" width="100%" height="100%" style="position:absolute;left:0" frameBorder="0"  ></iframe>
+          <!-- <img id="alt_img" src="{{ project.alt_img }}"> -->
         </div>
 
         <!-- <img class="project__img" src="img/{{ project.img }}" alt="{{alt}}"> -->
@@ -25,7 +26,11 @@
           {% endfor %}
         </div>
         <p>
-          {{ project.description }}
+          <ul>
+            {% for desc in project.description %}
+              <li>{{desc}}</li>  
+            {% endfor %}
+          </ul>
           <div>
             {% for button in project.buttons %}
             <a class="btn" href="{{button.url}}" target="_blank">{{button.name}}</a>
@@ -41,7 +46,15 @@
       </div>
     </div>
     {% endfor %}
-
+    
+  </p>
+  <div id="project_foot">
+    <p><a class="btn" href="" target="_blank">View More Projects</a></p>
+    <p>or check my  
+      <a class="link" href='https://github.com/Kisamegr'>Github</a> and  
+      <a class="link" href='https://bitbucket.org/kisamegr/'>Bitbucket</a>
+       profiles directly.
+    </div>
 
   </div>
 </div>
