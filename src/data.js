@@ -2,7 +2,7 @@ module.exports = {
   title: 'Hi, I\'m Stratos',
   header: "Hi, I'm Stratos Makrigiannakis",
   description: [
-    "also known as Kisamegr, currently living in Thessaloniki, Greece.",
+    "currently living in Thessaloniki, Greece.",
     "Started coding in middle school with Pascal, continued tempering with open source C++ Warcraft 3 bots in highschool, modifying Pokemon roms to implement my own unique stories  after  I joined the university, only to discover Unity 3D later and start experimenting making my own games.",
     "I am now working full time as a software developer whilst still having game development as a hobby. You will find me out with friends for (coffee || movies || dinner || board games), at the gym or at home playing games, watching videos and lurking on the internet."
   ],
