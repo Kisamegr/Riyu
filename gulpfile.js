@@ -50,13 +50,26 @@ gulp.task('templates', function () {
   .pipe(gulp.dest('./'))
 })
 
-gulp.task('watch', ['scripts', 'styles', 'templates'], function () {
-  gulp.watch('src/js/*.js', ['scripts'])
-  gulp.watch('src/scss/*.scss', ['styles'])
-  gulp.watch(['src/templates/**/*.html', 'src/data.js'], ['templates'])
+gulp.task('more_projects', function () {
+  var root = './src/templates/'
+
+  decache('./src/data.js')
+  var data = require('./src/data.js')
+
+  return gulp.src(root + 'more_projects.html')
+  .pipe(liquid(data))
+  .pipe(prettify())
+  .pipe(rename('more_projects.html'))
+  .pipe(gulp.dest('./'))
 })
 
-gulp.task('serve', ['scripts', 'styles', 'templates'], function() {
+gulp.task('watch', ['scripts', 'styles', 'templates','more_projects'], function () {
+  gulp.watch('src/js/*.js', ['scripts'])
+  gulp.watch('src/scss/*.scss', ['styles'])
+  gulp.watch(['src/templates/**/*.html', 'src/data.js'], ['templates','more_projects'])
+})
+
+gulp.task('serve', ['scripts', 'styles', 'templates','more_projects'], function() {
   browserSync.init({
     server: {
       baseDir: "./"
@@ -66,10 +79,13 @@ gulp.task('serve', ['scripts', 'styles', 'templates'], function() {
 
   gulp.watch('src/js/*.js', ['scripts'])
   gulp.watch('src/scss/*.scss', ['styles'])
-  gulp.watch(['src/templates/**/*.html', 'src/data.js'], ['templates']);
+  gulp.watch(['src/templates/**/*.html', 'src/data.js'], ['templates','more_projects']);
 
   gulp.watch('index.html', function () {
     gulp.src('index.html').pipe(browserSync.stream())
+  })
+  gulp.watch('more_projects.html', function () {
+    gulp.src('more_projects.html').pipe(browserSync.stream())
   })
   gulp.watch('css/index.css', function () {
     gulp.src('css/index.css').pipe(browserSync.stream())
@@ -85,4 +101,4 @@ gulp.task('webserver', function() {
     }))
 })
 
-gulp.task('build', ['scripts', 'styles', 'templates'])
+gulp.task('build', ['scripts', 'styles', 'templates','more_projects'])

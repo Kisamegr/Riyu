@@ -37,7 +37,7 @@
   }
   &__img {
     display: inline-block;
-    margin: 0 auto;
+    margin: 20px 0px auto auto;
     max-height: 100%;
     max-width: 100%;
     
@@ -115,5 +115,9 @@
   .btn {
 
     justify-content: center;
+  }
+
+  #backbtn {
+    width: 200px;
   }
 }

@@ -1,6 +1,6 @@
 <div class="parent-container">
   <div class="container project-container">
-    <h1>Projects</h1>
+    <h1>{{projects_title}}</h1>
     {% for project in projects %}
     <div class="project">
       <div class="project__img-container">
@@ -10,8 +10,15 @@
         </iframe>
       -->
         <div class="project__img">
-          <iframe src="{{ project.img }}" width="100%" height="100%" style="position:absolute;left:0" frameBorder="0"  ></iframe>
-          <!-- <img id="alt_img" src="{{ project.alt_img }}"> -->
+
+          {% if project.giphy %}
+          <iframe src="{{ project.giphy }}" width="100%" height="100%" style="position:absolute;left:0" frameBorder="0"  ></iframe>
+          {% endif %}
+
+          {% if project.img %}
+          <img id="alt_img" src="{{ project.img }}">
+          {% endif %}
+
         </div>
 
         <!-- <img class="project__img" src="img/{{ project.img }}" alt="{{alt}}"> -->
@@ -49,12 +56,15 @@
     
   </p>
   <div id="project_foot">
-    <p><a class="btn" href="" target="_blank">View More Projects</a></p>
+    {% if use_project_foot == true %}
+    <p><a class="btn" href="more_projects.html" target="_blank">View More Projects</a></p>
     <p>or check my  
       <a class="link" href='https://github.com/Kisamegr'>Github</a> and  
       <a class="link" href='https://bitbucket.org/kisamegr/'>Bitbucket</a>
        profiles directly.
+    {% else %}
+    <p><a id="backbtn" class="btn" href="index.html">Back</a></p>
+    {% endif %}
     </div>
-
   </div>
 </div>

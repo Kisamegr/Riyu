@@ -2,9 +2,8 @@ module.exports = {
   title: 'Hi, I\'m Stratos',
   header: "Hi, I'm Stratos Makrigiannakis",
   description: [
-    "currently living in Thessaloniki, Greece.",
-    "Started coding in middle school with Pascal, continued tempering with open source C++ Warcraft 3 bots in highschool, modifying Pokemon roms to implement my own unique stories  after  I joined the university, only to discover Unity 3D later and start experimenting making my own games.",
-    "I am now working full time as a software developer whilst still having game development as a hobby. You will find me out with friends for (coffee || movies || dinner || board games), at the gym or at home playing games, watching videos and lurking on the internet."
+    "and I am currently living in Thessaloniki, Greece, working full-time as a Software Engineer.",
+    ""
   ],
   
   name: 'Stratos Makrigiannakis',
@@ -35,6 +34,9 @@ module.exports = {
 
   ],
 
+  use_project_foot: true,
+  projects_title: 'My Projects',
+
   projects: [
     {
       name: 'Swingoff',
@@ -45,7 +47,7 @@ module.exports = {
       ],
       tags: ['Unity', 'C#', 'Android', '2D'],
       alt: 'Swingoff Screenshot', // alt description of image for accessibility. defaults to '{{name}} Screenshot'
-      img: 'https://giphy.com/embed/xULW8lPAzZ1enk4kec',
+      giphy: 'https://giphy.com/embed/xULW8lPAzZ1enk4kec',
       alt_img: 'img/Swingoff.png',
       buttons: [
         {
@@ -62,7 +64,7 @@ module.exports = {
 
       ], 
       tags: ['Unity', 'C#', 'Android', "iOS", "Windows", '2D'],
-      img: 'https://giphy.com/embed/xULW8tCe3AqoE3OKru',
+      giphy: 'https://giphy.com/embed/xULW8tCe3AqoE3OKru',
       buttons: [
         {
           name: 'Google Play',
@@ -83,18 +85,18 @@ module.exports = {
 
       ], 
       tags: ['Unity', 'C#', "AI", '3D', 'Multiplayer'],
-      img: 'https://giphy.com/embed/l49JSwY6hvsq7Hq12',
+      giphy: 'https://giphy.com/embed/l49JSwY6hvsq7Hq12',
       buttons: [
         {
           name: 'View Project',
           url: 'https://github.com/Kisamegr/Thesis-Project-Snake'
         },
         {
-          name: 'Play WebGL Demo',
+          name: 'WebGL Demo',
           url: 'https://kisamegr.github.io/Thesis-Project-Snake/'
         }
       ] 
-    },
+    }
   ],
   experiences: [
     {
@@ -103,11 +105,12 @@ module.exports = {
       timeline: 'Nov 2016 - Present',
       description: '',
       responsibilities: [
-        'Working on software and apps for Windows, MacOS, Android and iOS platforms',
-        'Developing back-end modules using C++ on the Qt framework.',
-        'Implementing interactive UI components for desktop and mobile devices',
-        'Handling the localization process by building the tools needed by our external translators',
-        'Creating and exporting 3D models in Blender when needed'
+        'Working on software and apps for Windows, MacOS, Android and iOS platforms.',
+        'Developing features using C++ on the Qt framework.',
+        'Implementing interactive UI components for desktop and mobile devices.',
+        'Handling software localization by building tools and extracting data for external translators.',
+        'QA on various platforms.',
+        'Creating 3D models in Blender.'
       ]
     },
     {
@@ -121,6 +124,130 @@ module.exports = {
       ]
     }
   ],
+
+
+
+  more_projects: [
+    {
+      name: 'Rom Hacking / Youtube Channel',
+      description: [
+        'Started as a hobby, but got popular on Youtube with over 9 million total views and 24k subscribers.',
+        'Modifying Game Boy Advance roms with modding tools and scripting editors, realizing my own stories and ideas.',
+        'Creating maps with original or custom tilesets, adding story-driven events, changing in-game sprites/animations, and implementing custom mechanics via scripts.'
+      ],
+      tags: ['Youtube', 'Scripting', 'Tiling'],
+      alt: 'Rom Screenshot', // alt description of image for accessibility. defaults to '{{name}} Screenshot'
+      img: 'https://i.imgur.com/KKpITJn.png',
+      alt_img: 'img/Swingoff.png',
+      buttons: [
+        {
+          name: 'Youtube Channel',
+          url: 'https://www.youtube.com/kisamegr'
+        },
+        {
+          name: 'Youtube blog',
+          url: 'http://kisamegr.blogspot.gr/'
+        },
+
+        {
+          name: 'View Ruby Project',
+          url: 'https://github.com/Kisamegr/Pokemon-Ruby-The-Prequel'
+        },
+        {
+          name: 'View Emerald Project',
+          url: 'https://github.com/Kisamegr/Emerald'
+        }
+      ]    
+    },
+    {
+      name: 'NeuroEvolution Demo',
+      description: [
+        'Personal project started out of interest for the neuroevolution algorithms, making \"creatures\" learn simple actions such as standing, walking and even running/jumping.',
+        '3-layer perceptron neural networks are used for each creature\'s brain, and are updated via genetic evolution.',
+        'The creatures are 2-legged with 2 moving joints controlled by the neural network. For more detailed information check the project\'s page.'
+      ],
+      tags: ['Unity', 'C#', 'Neural Networks', 'Genetic Evolution'],
+      alt: 'Swingoff Screenshot', // alt description of image for accessibility. defaults to '{{name}} Screenshot'
+      img: 'https://imgur.com/9YaEkck.png',
+      alt_img: 'img/Swingoff.png',
+      buttons: [
+        {
+          name: 'View Project',
+          url: 'https://github.com/Kisamegr/NeuroThingy'
+        },
+        {
+          name: 'WebGL Demo',
+          url: 'https://kisamegr.github.io/NeuroThingy/'
+        }
+      ]    
+    },
+    {
+      name: 'Spaceball Demo',
+      description: [
+        'Had an idea in which spaceships are hitting a ball trying to score a goal. Rocket League came out sort after, aaand the idea was abandoned.',
+        'Experimented with terrain building and texture drawing in Unity, baked lighting and post processing effects.',
+        'Had fun creating a 4-point hover system for the spaceships.'
+       
+      ],
+      tags: ['Unity', 'C#', 'Terrain', 'Lighting', 'Post Processing'],
+      alt: 'Spaceball Screenshot', // alt description of image for accessibility. defaults to '{{name}} Screenshot'
+      img: 'https://imgur.com/WyapjRC.png',
+      alt_img: '',
+      buttons: [
+        {
+          name: 'View Project',
+          url: 'https://github.com/Kisamegr/SpaceBall'
+        },
+        {
+          name: 'WebGL Demo',
+          url: 'https://kisamegr.github.io/SpaceBall/'
+        }
+      ]    
+    },
+
+    {
+      name: 'Monopoly Game',
+      description: [
+        'University assignment to create a text-based monopoly game on the windows command prompt.',
+        'Implemented a unique graphical interface based on colored ascii characters.',
+        'Supports up to 8 players, with name, pawn and color customization, rolling dices, buying properties, building houses and hotels, decision cards and saving the game state.'
+
+       
+      ],
+      tags: ['C', 'Ascii', 'Cmd Prompt'],
+      alt: 'Monopoly Screenshot', // alt description of image for accessibility. defaults to '{{name}} Screenshot'
+      img: 'https://i.imgur.com/uKF1sJg.png',
+      alt_img: '',
+      buttons: [
+        {
+          name: 'View Project',
+          url: 'https://github.com/Kisamegr/Monopoly-CMD'
+        }
+      ]    
+    },
+
+    {
+      name: 'Qt Fractal Explorer',
+      description: [
+        'Personal project to learn the Qt/Qml framework integration with OpenGL',
+        'Features 3 fractals: Barnsley\'s, Snowflake and Malndelbrot',
+        'Supports panning the view, zooming in/out and changing properties such as iterations, color and size'
+
+       
+      ],
+      tags: ['C++', 'Qt/Qml', 'OpenGL', 'Fractal'],
+      alt: 'Qt Screenshot', // alt description of image for accessibility. defaults to '{{name}} Screenshot'
+      img: 'https://i.imgur.com/OTqosy6.png',
+      alt_img: '',
+      buttons: [
+        {
+          name: 'View Project',
+          url: 'https://github.com/Kisamegr/QtFractalExplorer/tree/master'
+        }
+      ]    
+    }
+
+  ]
  /* testimonials: [
     {
       quote: 'Incredibly talented and hardworking. A super friendly guy who is a frequent communicator',
