@@ -11,7 +11,7 @@ module.exports = {
   email: 'stratos.makrigiannakis@gmail.com',
   cta: {
     label: 'Get my resume',
-    url: 'https://drive.google.com/file/d/1THrBl-jWAYacPdxjgA8kVGE1jZzPSmXD/view?usp=sharing',
+    url: 'https://drive.google.com/open?id=1VZOvOoAiV3zXJ6KDSXbyrRJXbL5ZYe4T',
   },
   socials: [
     //{ icon: 'twitter', url: '//' },
@@ -120,7 +120,7 @@ module.exports = {
       responsibilities: [
         'Various programming work on projects directed by my supervisor professor, including 2D Physics simulation educational games and "ZWave Sensors" area monitoring software.',
         'Made games as academic projects, such as Monopoly in C, Poker in Java, and a 3D Snake game with AI in Unity as my graduation thesis.',
-        'Playing with lots prototypes and demos in Unity on my free time, releasing 2 games on the mobile platform.'
+        'Playing with lots of prototypes and demos in Unity on my free time, releasing 2 games on the mobile platform.'
       ]
     }
   ],
