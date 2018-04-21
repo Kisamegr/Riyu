@@ -100,7 +100,7 @@ module.exports = {
   ],
   experiences: [
     {
-      title: 'Software Engineer at Wings Systems',
+      title: 'Software Engineer',
       // title: 'Software Engineer at <a href="http://www.wingssystems.com/">Wings Systems</a>',
       timeline: 'Nov 2016 - Present',
       description: '',

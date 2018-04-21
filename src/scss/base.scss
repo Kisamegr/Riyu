@@ -18,10 +18,8 @@ h1 {
 
 .parent-container {
 
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb(109, 109, 109);
-  background-color: darkcyan;
+  border-style: none;
+  background-color: $main-color;
   margin: 12px auto;
   padding: 5px 5px;
   @media #{$tablet} {
@@ -30,10 +28,8 @@ h1 {
 }
 
 .container {
-  border-style: dashed;
-  border-width: 5px;
-  border-color: lightgrey;
-  color: white;
+  border-style: none;
+  color: #333;
   padding: 10px 20px;
   // padding: 5px 5px 5px 5px;
   // background-clip: 10px;
@@ -55,8 +51,8 @@ h1 {
   color: $info-text-color;
 
   &--primary {
-    background: $main-color;
-    color: $main-text-color;
+    background: #f04;
+    // color: $main-text-color;
   }
 
   &--lg {
@@ -66,17 +62,16 @@ h1 {
 
 }
 
+.btn:hover {
+  background-color: lightcoral;
+}
 .link {
-  color: white;
+  color: #f04;
   font-weight: bold;
 }
 .link:hover {
-    color:lightgray;
+    color:#f47;
   
-}
-
-.btn:hover {
-  background-color: darkred;
 }
 
 .skill-tags {
@@ -88,9 +83,11 @@ h1 {
 
 .skill-tag {
   background-color: $tag-color;
+  color: $main-color;
   display: inline-block;
   padding: 4px 8px;
   margin-top: 4px;
+  border-radius: 10px;
 }
 
 .testimonial {

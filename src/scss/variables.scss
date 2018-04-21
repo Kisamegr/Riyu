@@ -2,19 +2,20 @@ $mobile: "(min-width: 0px)";
 $tablet: "(min-width: 768px)";
 $desktop: "(min-width: 1024px)";
 
-$main-color: darkslategrey;
-$main-text-color: #fff;
+$main-color: #fdfdfd;
+$main-text-color:#2f2f2f;
 
-$info-color: $main-color;
+$info-color: #f04;
 $info-text-color: white;
 
-$tag-color: teal;
 
-$back_color: $main-color;
+$tag-color: rgb(131, 161, 131);// rgb(126, 126, 126);
+
+$back_color: #fdfdfd;
 
 $muted-color: #eaeaea;
 $footer-color: black;
-$footer-text-color: white;
+$footer-text-color: $main-text-color;
 $footer-alt-color: $main-color;
 
 $contact-icon-size: 70px;

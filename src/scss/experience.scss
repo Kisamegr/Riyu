@@ -3,15 +3,15 @@
 
 .timeline {
   position: relative;
-border-style: solid;
-  border-width: 0;
-  border-top-width: 2px;
-  border-color: $tag-color;
+// border-style: solid;
+//   border-width: 0;
+//   border-top-width: 2px;
+//   border-color: $main-text-color;
   padding-top: 15px;
   
   &__line {
     width: 2px;
-    background: $muted-color;
+    background: lightgray;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -31,12 +31,12 @@ border-style: solid;
   &__item {
     animation: slideUp 750ms both;
 
-    background-color: $main-color;
+    // background-color: $tag-color;
     border: 1px solid #eaeaea;
     border-top: 2px solid red;
     color: $main-text-color;
     display: inline-block;
-    font-size: 13px;
+    font-size: 14px;
     padding: 15px;
     position: relative;
     vertical-align: top;
@@ -47,7 +47,7 @@ border-style: solid;
     &:after {
       height: 1px;
       top: 0;
-      background-color: $muted-color;
+      background-color: lightgray;
       content: '';
       display: block;
       left: inherit;
