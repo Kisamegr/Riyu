@@ -12,14 +12,16 @@
           <video class="project__vid_thumb thumb_size" autoplay loop>
             <source src="{{ project.video }}" type="video/webm">
           </video>
-          <div class="project__vid_overlay thumb_size">
-            <span class ="project__vid_overlay__text thumb_size"><b>{{ project.name }}</b></span>
-          </div>
           {% endif %}
-          
+
           {% if project.more_thumb %}
-          <img class="project__more_thumb" src="{{ project.more_thumb }}">
+          <img class="project__more_thumb thumb_size" src="{{ project.more_thumb }}">
+
           {% endif %}
+
+          <div class="project__vid_overlay thumb_size">
+            <span class="project__vid_overlay__text thumb_size"><b>{{ project.name }}</b></span>
+          </div>
 
           <div class="project__info">
             <div class="project__info-content">
@@ -74,13 +76,13 @@
       // Get the modal
       var modals = document.getElementsByClassName("project__info");
 
-      
+
       // Get the button that opens the modal
       let clickables = document.getElementsByClassName("project__vid_overlay");
-      if(clickables.length === 0) {
+      if (clickables.length === 0) {
         clickables = document.getElementsByClassName("project__more_thumb");
         console.log(clickables)
-        
+
       }
 
 
