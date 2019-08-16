@@ -39,6 +39,22 @@ module.exports = {
 
   projects: [
     {
+      name: 'Zone Out 42',
+      description: [
+        'A top-down 2D bullet hell game, made for the 42th Ludum Dare competition.',
+        'Theme was "Running out of space, developed in a 2-man team in less than 72 hours!',
+        'Ranked 131st over 3k+ submissions.'
+      ],
+      tags: ['Unity', 'C#', 'Ludum Dare', '2D'],
+      video: 'vid/42.webm',
+      buttons: [
+        {
+          name: 'WebGL Demo',
+          url: 'https://kisamegr.github.io/ludum_dare_42/'
+        }
+      ]    
+    },
+    {
       name: 'Swingoff',
       description: [
         'A fast paced, infinite runner mobile game where you have to stay on air using your mechanical hook. Avoid obstacles in the way and pick up power ups to help you survive!',
@@ -46,9 +62,7 @@ module.exports = {
         'Achieved 2nd place in the national Imagine Cup Games competition by Microsoft.'
       ],
       tags: ['Unity', 'C#', 'Android', '2D'],
-      alt: 'Swingoff Screenshot', // alt description of image for accessibility. defaults to '{{name}} Screenshot'
-      giphy: 'https://giphy.com/embed/xULW8lPAzZ1enk4kec',
-      alt_img: 'img/Swingoff.png',
+      video: 'vid/swing.webm',
       buttons: [
         {
           name: 'Google Play',
@@ -64,7 +78,7 @@ module.exports = {
 
       ], 
       tags: ['Unity', 'C#', 'Android', "iOS", "Windows", '2D'],
-      giphy: 'https://giphy.com/embed/xULW8tCe3AqoE3OKru',
+      video: 'vid/fox.webm',
       buttons: [
         {
           name: 'Google Play',
@@ -85,7 +99,7 @@ module.exports = {
 
       ], 
       tags: ['Unity', 'C#', "AI", '3D', 'Multiplayer'],
-      giphy: 'https://giphy.com/embed/l49JSwY6hvsq7Hq12',
+      video: 'vid/snakes.webm',
       buttons: [
         {
           name: 'View Project',
@@ -136,9 +150,7 @@ module.exports = {
         'Creating maps with original or custom tilesets, adding story-driven events, changing in-game sprites/animations, and implementing custom mechanics via scripts.'
       ],
       tags: ['Youtube', 'Scripting', 'Tiling'],
-      alt: 'Rom Screenshot', // alt description of image for accessibility. defaults to '{{name}} Screenshot'
-      img: 'https://i.imgur.com/KKpITJn.png',
-      alt_img: 'img/Swingoff.png',
+      more_thumb: 'https://i.imgur.com/KKpITJn.png',
       buttons: [
         {
           name: 'Youtube Channel',
@@ -168,8 +180,7 @@ module.exports = {
       ],
       tags: ['Unity', 'C#', 'Neural Networks', 'Genetic Evolution'],
       alt: 'Swingoff Screenshot', // alt description of image for accessibility. defaults to '{{name}} Screenshot'
-      img: 'https://imgur.com/9YaEkck.png',
-      alt_img: 'img/Swingoff.png',
+      more_thumb: 'https://imgur.com/9YaEkck.png',
       buttons: [
         {
           name: 'View Project',
@@ -191,8 +202,7 @@ module.exports = {
       ],
       tags: ['Unity', 'C#', 'Terrain', 'Lighting', 'Post Processing'],
       alt: 'Spaceball Screenshot', // alt description of image for accessibility. defaults to '{{name}} Screenshot'
-      img: 'https://imgur.com/WyapjRC.png',
-      alt_img: '',
+      more_thumb: 'https://imgur.com/WyapjRC.png',
       buttons: [
         {
           name: 'View Project',
@@ -216,8 +226,7 @@ module.exports = {
       ],
       tags: ['C', 'Ascii', 'Cmd Prompt'],
       alt: 'Monopoly Screenshot', // alt description of image for accessibility. defaults to '{{name}} Screenshot'
-      img: 'https://i.imgur.com/uKF1sJg.png',
-      alt_img: '',
+      more_thumb: 'https://i.imgur.com/uKF1sJg.png',
       buttons: [
         {
           name: 'View Project',
@@ -237,8 +246,7 @@ module.exports = {
       ],
       tags: ['C++', 'Qt/Qml', 'OpenGL', 'Fractal'],
       alt: 'Qt Screenshot', // alt description of image for accessibility. defaults to '{{name}} Screenshot'
-      img: 'https://i.imgur.com/OTqosy6.png',
-      alt_img: '',
+      more_thumb: 'https://i.imgur.com/OTqosy6.png',
       buttons: [
         {
           name: 'View Project',
