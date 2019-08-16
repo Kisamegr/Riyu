@@ -25,7 +25,12 @@
 
 
 
-                            <img class="project__more_thumb" src="https://i.imgur.com/KKpITJn.png">
+                            <img class="project__more_thumb thumb_size" src="https://i.imgur.com/KKpITJn.png">
+
+
+                            <div class="project__vid_overlay thumb_size">
+                                <span class="project__vid_overlay__text thumb_size"><b>Rom Hacking / Youtube Channel</b></span>
+                            </div>
 
                             <div class="project__info">
                                 <div class="project__info-content">
@@ -76,7 +81,12 @@
 
 
 
-                            <img class="project__more_thumb" src="https://imgur.com/9YaEkck.png">
+                            <img class="project__more_thumb thumb_size" src="https://imgur.com/9YaEkck.png">
+
+
+                            <div class="project__vid_overlay thumb_size">
+                                <span class="project__vid_overlay__text thumb_size"><b>NeuroEvolution Demo</b></span>
+                            </div>
 
                             <div class="project__info">
                                 <div class="project__info-content">
@@ -126,7 +136,12 @@
 
 
 
-                            <img class="project__more_thumb" src="https://imgur.com/WyapjRC.png">
+                            <img class="project__more_thumb thumb_size" src="https://imgur.com/WyapjRC.png">
+
+
+                            <div class="project__vid_overlay thumb_size">
+                                <span class="project__vid_overlay__text thumb_size"><b>Spaceball Demo</b></span>
+                            </div>
 
                             <div class="project__info">
                                 <div class="project__info-content">
@@ -177,7 +192,12 @@
 
 
 
-                            <img class="project__more_thumb" src="https://i.imgur.com/uKF1sJg.png">
+                            <img class="project__more_thumb thumb_size" src="https://i.imgur.com/uKF1sJg.png">
+
+
+                            <div class="project__vid_overlay thumb_size">
+                                <span class="project__vid_overlay__text thumb_size"><b>Monopoly Game</b></span>
+                            </div>
 
                             <div class="project__info">
                                 <div class="project__info-content">
@@ -225,7 +245,12 @@
 
 
 
-                            <img class="project__more_thumb" src="https://i.imgur.com/OTqosy6.png">
+                            <img class="project__more_thumb thumb_size" src="https://i.imgur.com/OTqosy6.png">
+
+
+                            <div class="project__vid_overlay thumb_size">
+                                <span class="project__vid_overlay__text thumb_size"><b>Qt Fractal Explorer</b></span>
+                            </div>
 
                             <div class="project__info">
                                 <div class="project__info-content">
@@ -277,12 +302,8 @@
 
                     // Get the button that opens the modal
                     let clickables = document.getElementsByClassName("project__vid_overlay");
-                    if (clickables.length === 0) {
+                    if (clickables.length === 0)
                         clickables = document.getElementsByClassName("project__more_thumb");
-                        console.log(clickables)
-
-                    }
-
 
                     // Get the <span> element that closes the modal
                     let spans = document.getElementsByClassName("close");

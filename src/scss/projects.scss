@@ -24,12 +24,15 @@
   }
 
 
-  &__vid_thumb {
+  &__vid_thumb, &__more_thumb {
     border-style: solid;
     border-width: 1px;
     border-radius: 4px;
     border-color: #000000;
     background-color: black;
+
+    cursor: pointer;
+    object-fit: cover;
   }
 
   &__vid_overlay {
@@ -107,6 +110,18 @@
     border-width: 2px;
     border-radius: 4px;
     border-color: #000000;
+  }
+
+  &__more_thumb_info {
+    width: 86vw;
+    height: 86vw;
+    line-height: 86vw;
+  
+    @media #{$tablet} {
+      height: 402px;
+      width: 402px;
+      line-height: 402px;
+    }
   }
 
   .close {

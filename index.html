@@ -58,10 +58,11 @@
                             <video class="project__vid_thumb thumb_size" autoplay loop>
                                 <source src="vid/42.webm" type="video/webm">
                             </video>
+
+
                             <div class="project__vid_overlay thumb_size">
                                 <span class="project__vid_overlay__text thumb_size"><b>Zone Out 42</b></span>
                             </div>
-
 
                             <div class="project__info">
                                 <div class="project__info-content">
@@ -114,10 +115,11 @@
                             <video class="project__vid_thumb thumb_size" autoplay loop>
                                 <source src="vid/swing.webm" type="video/webm">
                             </video>
+
+
                             <div class="project__vid_overlay thumb_size">
                                 <span class="project__vid_overlay__text thumb_size"><b>Swingoff</b></span>
                             </div>
-
 
                             <div class="project__info">
                                 <div class="project__info-content">
@@ -170,10 +172,11 @@
                             <video class="project__vid_thumb thumb_size" autoplay loop>
                                 <source src="vid/fox.webm" type="video/webm">
                             </video>
+
+
                             <div class="project__vid_overlay thumb_size">
                                 <span class="project__vid_overlay__text thumb_size"><b>Crafty Fox</b></span>
                             </div>
-
 
                             <div class="project__info">
                                 <div class="project__info-content">
@@ -228,10 +231,11 @@
                             <video class="project__vid_thumb thumb_size" autoplay loop>
                                 <source src="vid/snakes.webm" type="video/webm">
                             </video>
+
+
                             <div class="project__vid_overlay thumb_size">
                                 <span class="project__vid_overlay__text thumb_size"><b>Snake 3D with AI</b></span>
                             </div>
-
 
                             <div class="project__info">
                                 <div class="project__info-content">
@@ -287,12 +291,8 @@
 
                     // Get the button that opens the modal
                     let clickables = document.getElementsByClassName("project__vid_overlay");
-                    if (clickables.length === 0) {
+                    if (clickables.length === 0)
                         clickables = document.getElementsByClassName("project__more_thumb");
-                        console.log(clickables)
-
-                    }
-
 
                     // Get the <span> element that closes the modal
                     let spans = document.getElementsByClassName("close");
