@@ -1,76 +1,148 @@
+
+.thumb_size {
+  width: 86vw;
+  height: 43vw;
+  line-height: 43vw;
+
+  @media #{$tablet} {
+    height: 202px;
+    width: 402px;
+    float: left;
+    line-height: 202px;
+  }
+}
+
 .project {
+  position: relative;
   overflow: hidden;
   margin-bottom: 0px;
   text-align: center;
   border-style: none;
 
-
   @media #{$tablet} {
     text-align: left;
   }
 
-  &__img-container {
-    margin: 5px auto;
-    text-align: center;
-    height: 80vw;
-    width: 80vw;
-    line-height: 100px;
-    max-width: 300px;
-    max-height: 300px;
-    // border-style: solid;
-    // border-width: 1px;
-    // border-radius: 4px;
-    @media #{$tablet} {
-      float: left;
-      line-height: 300px;
-      height: 300px;
-      width: 300px;
-    }
-  }
 
-  #alt_img {
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-  &__img {
-    display: inline-block;
-    margin: 20px 0px auto auto;
-    max-height: 100%;
-    max-width: 100%;
-    
-    width:100%;
-    height:100%;
-    position:relative;
-    background-color: black;
-
-    text-align: center;
-    vertical-align: middle;
+  &__vid_thumb {
     border-style: solid;
-    border-width: 3px;
+    border-width: 1px;
     border-radius: 4px;
-    border-color: #3ab28e;
+    border-color: #000000;
+    background-color: black;
   }
+
+  &__vid_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(82, 82, 82, 0.753);
+    float: left;
+    text-align: center;
+    // vertical-align: middle;    
+    z-index: 2;
+    font-size: 25pt;
+    cursor: pointer;
+
+    opacity: 0;
+    transition: .5s ease;
+
+
+    
+    &__text{
+      color: white;
+    }
+
+  }
+
+  &__vid_overlay:hover {
+    opacity: 1;
+  }
+
+
+  // &__img {
+  //   // display: inline-block;
+  //   // margin: 20px 0px auto auto;
+  //   max-height: 100%;
+  //   max-width: 100%;
+    
+  //   width:100%;
+  //   height:100%;
+  //   // position:relative;
+  //   background-color: black;
+
+  //   text-align: center;
+  //   vertical-align: middle;
+
+  // }
+
+  &__info {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.671); /* Black w/ opacity */
+  }
+  
+  &__info-content {
+    max-width: 850px;
+    border-radius: 10px;
+    position: relative;
+    background-color: #eee;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 15px;
+    border: 1px solid rgb(75, 75, 75);
+    width: 95%; /* Could be more or less, depending on screen size */
+  }
+
+  &__vid_info, &__more_thumb_info {
+    display: block;
+    margin: auto;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 4px;
+    border-color: #000000;
+  }
+
+  .close {
+    position: absolute;
+    right: 3px;
+    top: -5px;
+    font-size: 16pt;
+    cursor: pointer;
+
+  }
+
   &__name {
     margin-bottom: 5px;
   }
   &__details {
-    padding: 15px;
+    // padding: 15px;
+    text-align: center;
 
-    @media #{$tablet} {
-      margin-left: 300px;
-      margin-right: 0;
-    }
+    line-height: 1
+    // @media #{$tablet} {
+    //   margin-left: 300px;
+    //   margin-right: 0;
+    // }
   }
 
   ul {
-    padding-left: 10px;
+    margin-left: -15px;
+    text-align: left;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 
-    list-style-type: none;
+    list-style-type: '⮞  ';
 
-    @media #{$tablet} {
-      list-style-type: ' - ';
-    }
+    // @media #{$tablet} {
+    // }
 
     li {
       @media #{$tablet} {
@@ -82,22 +154,27 @@
 }
 
 
-.project:nth-child(even) {
-  .project__img-container {
-    @media #{$tablet} {
-      float: right;
-    }
+#project-grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 15px;
 
+  @media #{$tablet} {
+    grid-template-columns: auto auto;
   }
-  .project__details {
-    @media #{$tablet} {
-      margin-left: 0;
-      margin-right: 300px;
-    }
-  }
-
-
 }
+
+// .project:nth-child(even) {
+
+//   .project__details {
+//     @media #{$tablet} {
+//       margin-left: 0;
+//       margin-right: 300px;
+//     }
+//   }
+
+
+// }
 
 #project_foot {
   border-style: solid;
