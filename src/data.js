@@ -11,7 +11,7 @@ module.exports = {
   email: 'stratos.makrigiannakis@gmail.com',
   cta: {
     label: 'Get my resume',
-    url: 'https://drive.google.com/file/d/1xPDprp2KbKxjKXE4QdOmM4MVDYew7684/view?usp=sharing',
+    url: 'https://drive.google.com/file/d/1XiLsSiYcNVuBvHnzo4qG-J1RCx1VW3EL/view?usp=sharing',
   },
   socials: [
     //{ icon: 'twitter', url: '//' },
